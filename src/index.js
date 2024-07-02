@@ -19,14 +19,16 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-gray-900 text-white">
       <Header />
-      <Banner />
-      <div className="flex flex-1">
+      <div className="flex flex-1 mt-16"> {/* Add mt-16 to account for the fixed header height */}
         <Sidebar onSongSelect={handleSongSelect} />
-        <div className="flex-1 p-4">
-          <PlaylistSection onSongSelect={handleSongSelect} />
-          <Suggestions />
+        <div className="flex-1 ml-64"> {/* Add margin-left to account for the fixed sidebar */}
+          <Banner />
+          <div className="p-4">
+            <PlaylistSection onSongSelect={handleSongSelect} />
+            <Suggestions />
+          </div>
         </div>
       </div>
       <MusicPlayer song={currentSong} />

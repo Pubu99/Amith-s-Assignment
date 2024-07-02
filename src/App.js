@@ -21,10 +21,10 @@ const App = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
       <Header />
-      <Banner />
       <div className="flex flex-1">
-        <Sidebar onSongSelect={handleSongSelect} className="w-1/4 bg-gray-800" />
-        <div className="flex-1 p-4">
+        <Sidebar onSongSelect={handleSongSelect} />
+        <div className="flex-1 ml-64 p-4">
+          <Banner />
           <PlaylistSection onSongSelect={handleSongSelect} />
           <Suggestions />
         </div>
