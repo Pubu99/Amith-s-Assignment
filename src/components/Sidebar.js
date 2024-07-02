@@ -6,8 +6,15 @@ const Sidebar = ({ onSongSelect }) => {
     { title: 'Wrong Semicolon', url: 'https://www.youtube.com/watch?v=3JZ_D3ELwOQ' },
     { title: 'Essential coffee', url: 'https://www.youtube.com/watch?v=lTRiuFIWV54' },
     { title: 'Hmm Standard code', url: 'https://www.youtube.com/watch?v=lTRiuFIWV54' },
-    { title: 'Focus on Deadline', url: 'https://www.youtube.com/watch?v=9bZkp7q19f0' }
-    // Add more songs with YouTube URLs
+    { title: 'Focus on Deadline', url: 'https://www.youtube.com/watch?v=9bZkp7q19f0' },
+    { title: '24/7 Coding Non-stop', url: 'https://www.youtube.com/watch?v=FzG4uDgje3M' },
+    { title: 'Bounty On My Code', url: 'https://www.youtube.com/watch?v=6J6y8GOC11s' },
+    { title: 'Debugging Battles', url: 'https://www.youtube.com/watch?v=DyDfgMOUjCI' },
+    { title: 'Dancing While Coding', url: 'https://www.youtube.com/watch?v=OpQFFLBMEPI' },
+    { title: 'Doctor, I Can\'t C#', url: 'https://www.youtube.com/watch?v=1tB73vGJ1jM' },
+    { title: 'Devil\'s Validation', url: 'https://www.youtube.com/watch?v=2vjPBrBU-TM' },
+    { title: 'Apocalyptic Java', url: 'https://www.youtube.com/watch?v=E1ZVSFfCk9g' },
+    { title: 'Infinite Acoustic', url: 'https://www.youtube.com/watch?v=DLzxrzFCyOs' }
   ];
 
   return (

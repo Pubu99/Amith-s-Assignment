@@ -23,12 +23,12 @@ const App = () => {
       <Header />
       <div className="flex flex-1 mt-16"> {/* Add mt-16 to account for the fixed header height */}
         <Sidebar onSongSelect={handleSongSelect} />
-        <div className="flex-1 ml-64"> {/* Add margin-left to account for the fixed sidebar */}
-          <Banner />
-          <div className="p-4">
+        <div className="flex-1 flex ml-64"> {/* Add margin-left to account for the fixed sidebar */}
+          <div className="flex-1 p-4">
+            <Banner />
             <PlaylistSection onSongSelect={handleSongSelect} />
-            <Suggestions />
           </div>
+          <Suggestions /> {/* Place Suggestions here */}
         </div>
       </div>
       <MusicPlayer song={currentSong} />
